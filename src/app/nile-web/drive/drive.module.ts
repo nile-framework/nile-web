@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DriveRoutingModule } from './drive-routing.module';
-import { DriveComponent } from './drive.component';
+import { DriveComponent } from './drive/drive.component';
 
 @NgModule({
   imports: [
