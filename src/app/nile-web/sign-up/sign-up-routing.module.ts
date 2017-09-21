@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DriveComponent } from './drive/drive.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
-  {path:'', component: DriveComponent}
+  { path: '', component: SignUpComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DriveRoutingModule { }
+export class SignUpRoutingModule { }
