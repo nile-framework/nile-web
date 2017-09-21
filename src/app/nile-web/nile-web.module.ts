@@ -16,6 +16,8 @@ import { NileWebComponent } from './nile-web.component';
     NileWebCoreModule,
     NileWebRoutingModule,
   ],
-  declarations: [NileWebComponent]
+  declarations: [
+    NileWebComponent,
+  ]
 })
 export class NileWebModule { }
