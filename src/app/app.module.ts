@@ -15,6 +15,10 @@ import { StoreModule } from '@ngrx/store'
 // App Routing Module
 import { AppRoutingModule } from './app-routing.module';
 
+// Routing Gurads
+// import { GuardsModule } from './guards/guards.module';
+import { AdminGuard } from './admin.guard';
+
 import { CoreModule } from './core/core.module';
 
 // ngrx stuff a luff.
@@ -67,11 +71,14 @@ import { AppComponent } from './app.component';
     EffectsModule.forRoot([AppEffects]),
 
     CoreModule,
+    // GuardsModule,
     // App Routing Module
     AppRoutingModule,
     NileWebModule
   ],
-  providers: [],
+  providers: [
+    AdminGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
