@@ -1,0 +1,23 @@
+.jumbotron {
+    background-color: #bc2025;
+    color: white;
+    background-image: url(/assets/images/Map_overlay.png);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+hr {
+
+}
+.btn {
+    background-color: #0A5A89;
+    border-color: #0A5A89;
+}
+h1 {
+
+}
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
