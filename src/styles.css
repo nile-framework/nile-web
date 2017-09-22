@@ -2,18 +2,18 @@
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
-
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+
 @font-face {
-    font-family: 'norwester' 
-    src=url('/assets/fonts/norwester.otf');
+    font-family: norwester;
+    src: url('/assets/fonts/norwester/Norwester.otf');
 }
 @font-face {
-    font-family: 'montserrat-reg'
-    src=url('/assets/fonts/montserrat/Montserrat-Regular.otf');
+    font-family: montserrat-reg;
+    src: url('/assets/fonts/montserrat/Montserrat-Regular.otf');
 }
 @font-face {
-    font-family: 'libre-baskerville'
-    src=url('/assets/fonts/montserrat/Montserrat-Regular.otf');
+    font-family: libre-baskerville-reg;
+    src: url('/assets/fonts/libre baskerville/LibreBaskerville-Regular.otf');
 }
