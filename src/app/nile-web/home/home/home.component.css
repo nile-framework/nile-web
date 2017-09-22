@@ -1,52 +1,57 @@
 .jumbotron {
-    background-color: #bc2025;
-    color: white;
-    background-image: url(/assets/images/Map_overlay.png);
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  background-color: #bc2025;
+  color: white;
+  background-image: url(/assets/images/Map_overlay.png);
+  height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .float-form {
-    float: right;
-    padding-right: 20px;
-    padding-top: 40px;
+  float: right;
+  padding-right: 20px;
+  padding-top: 40px;
 }
 .btn {
-    background-color: #0A5A89;
-    border-color: #0A5A89;
+  background-color: #0A5A89;
+  border-color: #0A5A89;
+}
+
+.my-4 {
+  width: 50%;
 }
 
 h1 {
-  font-family: norwester;
+  font-family: 'Oswald', sans-serif;
 }
 h2 {
-  font-family: yellowtail;
+  font-family: 'Yellowtail', cursive;
+  font-size: 250%;
 }
 h3 {
-    color: black;
-    font-family: libre-baskerville-reg;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
 }
 
 body {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form img {
-    width: 65%;
-    height: 65%;
-  }
+  width: 65%;
+  height: 65%;
+}
   
   .form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
   .form input {
     font-family: "Roboto", sans-serif;
@@ -73,18 +78,18 @@ body {
     transition: all 0.3 ease;
     cursor: pointer;
   }
-  .form button:hover,.form button:active,.form button:focus {
-    background: #BC2025;
-  }
+    .form button:hover,.form button:active,.form button:focus {
+      background: #BC2025;
+    }
   .form .message {
     margin: 15px 0 0;
     color: black;
     font-size: 12px;
   }
-  .form .message a {
-    color: #BC2025;
-    text-decoration: none;
-  }
+    .form .message a {
+      color: #BC2025;
+      text-decoration: none;
+    }
   .form .register-form {
     display: none;
   }
