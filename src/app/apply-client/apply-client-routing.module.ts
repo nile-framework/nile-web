@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { ApplyClientComponent } from './apply-client/apply-client.component';
+
+const routes: Routes = [
+  { path: '', component: ApplyClientComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

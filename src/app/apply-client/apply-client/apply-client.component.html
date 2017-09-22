@@ -1,0 +1,149 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	<!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button> -->
+	<a class="navbar-brand" routerLink="/" routerLinkActive="active">
+		<img src="/assets/images/logo_transparent_background.png" height="30" alt="The nile logo">
+	</a>
+
+	<div class="d-flex justify-content-end">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			<a routerLink="/" >Cancel Application</a>
+		</button>
+	</div>
+	<!-- <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/industries" routerLinkActive="active">Industries</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/about" routerLinkActive="active">About Nile</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/drive" routerLinkActive="active">Drive</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/sign-up" routerLinkActive="active">Sign Up</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+			</li>
+
+		</ul>
+	</div> -->
+</nav>
+
+<br>
+
+
+
+<div class="container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-sm-12 col-md-6">
+
+				<form [formGroup]="form" (submit)="onFormSubmit()">
+
+					<h3>Personal Info</h3>
+
+					<div class="form-group has-success">
+						<label for="firstName">First name</label>
+						<input type="text" formControlName="firstName" class="form-control form-control-success" id="firstName" aria-describedby="emailHelp" placeholder="Your first name">
+						<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+					</div>
+					
+					<div class="form-group">
+						<label for="lastName">Last name</label>
+						<input type="text" formControlName="lastName" class="form-control" id="lastName" placeholder="Your last name">
+					</div>
+
+					<div class="form-group">
+						<label for="mobilePhoneNumber">Phone number</label>
+						<input type="tel" formControlName="clientPhone" class="form-control" id="mobilePhoneNumber" placeholder="Your phone number">
+					</div>
+
+					<div class="form-group">
+						<label for="clientEmail">Email</label>
+						<input type="email" formControlName="clientEmail" class="form-control" id="clientEmail" placeholder="Your email">
+						<small id="emailHelp" class="form-text text-muted">This will be your primary login credential.</small>
+					</div>
+
+					<h3>
+						Company Info
+					</h3>
+
+					<div class="form-group">
+						<label for="companyNameHelp">The company name</label>
+						<input type="text" formControlName="companyName" class="form-control" id="companyNameHelp" placeholder="Your company name">
+					</div>
+
+					<div class="form-group">
+						<label for="companyPhoneHelp">Company phone number</label>
+						<input type="tel" formControlName="companyPhone" value="form.value.companyPhone" class="form-control" id="companyPhoneHelp" placeholder="Company phone number">
+						<label class="form-check-label">
+							<input formControlName="usePersonalPhone" type="checkbox" class="form-check-input">
+							Use my personal phone number
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label for="companyEmailHelp">Company email</label>
+						<input type="email" formControlName="companyEmail" class="form-control" id="companyEmailHelp" placeholder="Company email">
+						<label class="form-check-label">
+							<input formControlName="usePersonalEmail" type="checkbox" class="form-check-input">
+							Use my personal email
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label for="selectState">Select your state</label>
+						<select formControlName="state" class="form-control" id="selectState" placeholder="">
+							<option>Texas</option>
+							<option>other state</option>
+							<option>more states</option>
+							<option>yeah</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="selectCity">Select closest area</label>
+						<select formControlName="city" class="form-control" id="selectCity" placeholder="">
+							<option>Dallas</option>
+							<option>Fort Worth</option>
+							<option>Austin</option>
+							<option>Houston</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="selectCity">Estimated deliveries per week</label>
+						<select formControlName="deliveriesPerWeek" class="form-control" id="selectCity" placeholder="">
+							<option>1</option>
+							<option>2-5</option>
+							<option>5-15</option>
+							<option>15+</option>
+						</select>
+					</div>
+
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							By clicking sumbit I agree to Nile's <a routerLink="/terms-of-use">terms of use</a> and <a routerLink="/privacy-policy">privacy policy</a>.
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+
+		</div>
+	</div>
+
+</div>

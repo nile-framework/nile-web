@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const appRoutes: Routes = [
-	{ path: '', loadChildren:'app/nile-web/nile-web.module#NileWebModule'}
+	{ path: '', loadChildren: 'app/nile-web/nile-web.module#NileWebModule'},
+	{ path: 'client-apply', loadChildren: 'app/apply-client/apply-client.module#ApplyClientModule' },
+	// add more root routes here.
+	// { path: '', loadChildren: '' }
 ];
 
 
