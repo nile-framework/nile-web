@@ -7,13 +7,17 @@
 
 @font-face {
     font-family: norwester;
-    src: url('/assets/fonts/norwester/Norwester.otf');
+    src: url(/assets/fonts/norwester/Norwester.otf);
 }
 @font-face {
     font-family: montserrat-reg;
-    src: url('/assets/fonts/montserrat/Montserrat-Regular.otf');
+    src: url(/assets/fonts/montserrat/Montserrat-Regular.otf);
 }
 @font-face {
     font-family: libre-baskerville-reg;
-    src: url('/assets/fonts/libre baskerville/LibreBaskerville-Regular.otf');
+    src: url(/assets/fonts/libre-baskerville/LibreBaskerville-Regular.otf);
+}
+@font-face {
+    font-family: yelowtail;
+    src: url(/assets/fonts/yellowtail/Yellowtail-Regular.otf);
 }
