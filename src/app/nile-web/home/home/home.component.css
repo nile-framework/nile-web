@@ -11,7 +11,6 @@
     float: right;
     padding-right: 20px;
     padding-top: 40px;
-    align: right;
 }
 .btn {
     background-color: #0A5A89;
@@ -36,7 +35,7 @@ body {
     background: #FFFFFF;
     max-width: 360px;
     margin: 0 auto 100px;
-    padding: 45px;
+    padding: 40px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
