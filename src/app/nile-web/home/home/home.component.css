@@ -98,9 +98,9 @@ body {
   }
   .video {
     background-color: lightgray;
-    background-image: url(/assets/images/white_icon_transparent_background copy 2.png);
+    background-image: url(/assets/images/white_icon_transparent_background.png);
     height: 100%;
-    background-position: end;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
   }
