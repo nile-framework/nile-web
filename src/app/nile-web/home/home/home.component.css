@@ -2,15 +2,13 @@
   background-color: #bc2025;
   color: white;
   background-image: url(/assets/images/Map_overlay.png);
-  height: 100%;
+  width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .float-form {
   float: right;
-  padding-right: 20px;
-  padding-top: 20px;
 }
 .btn {
   background-color: #0A5A89;
@@ -98,8 +96,8 @@ body {
   }
   .video {
     background-color: lightgray;
-    background-image: url(/assets/images/white_icon_transparent_background.png);
-    height: 100%;
+    background-image: url(/assets/images/Map_overlay.png);
+    width: 100%;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,5 +107,5 @@ hr {
 }
 .graffiti {
   position: relative;
-  width:30%;
+  width:30vh;
 }
