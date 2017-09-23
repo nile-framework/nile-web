@@ -10,7 +10,7 @@
 .float-form {
   float: right;
   padding-right: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .btn {
   background-color: #0A5A89;
@@ -93,4 +93,21 @@ body {
   .form .register-form {
     display: none;
   }
-  
+  .managers {
+    width: 50%;
+  }
+  .video {
+    background-color: lightgray;
+    background-image: url(/assets/images/white_icon_transparent_background copy 2.png);
+    height: 100%;
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+hr {
+  width: 50%;
+}
+.graffiti {
+  position: relative;
+  width:30%;
+}
