@@ -1,82 +1,109 @@
 .jumbotron {
-    background-color: #bc2025;
-    color: white;
-    background-image: url(/assets/images/Map_overlay.png);
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-}
-.float-form {
-    float: right;
-    padding-right: 20px;
-    padding-top: 40px;
-}
-.btn {
-    background-color: #0A5A89;
-    border-color: #0A5A89;
-}
-h3 {
-    color: black;
-}
-body {
-    padding-left: 20px;
-    padding-right: 20px;
+  /* background-color: #bc2025; */
+  color: white;
+  background-image: url(/assets/images/construct-pickup-4c.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.form img {
-    width: 65%;
-    height: 65%;
+#phoneform {
+  float: right;
+  /* border-style: solid;
+  border-width: 25px;
+  border-image: url(/assets/images/iphone-frame-white.png) 25;
+  border-image-outset: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+#landform {
+  background: white;
+  width: 360px;
+  padding: 40px;
+  text-align: center;
+  margin-right: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#3clients {
+  float: left;
+}
+
+.btn {
+  background-color: #0A5A89;
+  border-color: #0A5A89;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+h2 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 250%;
+}
+h3 {
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#industries .img-fluid {
+  height: 150px;
+}
+
+#video {
+  background-color: lightgray;
+  background-image: url(/assets/images/Map_overlay.png);
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+  #videoframe {
+    padding: 20px;
   }
-  
-  .form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 40px;
-    text-align: center;
+
+#feature3 .card-img-top {
+    width: 100%;
+}
+
+
+#advantages {
+  background-image: url(/assets/images/constructscene2.jpg);
+  width: 100%;
+  height:500px;
+}
+
+/* .advantages { position: relative; }
+
+.advantages::after {
+  background-image: url(/assets/images/constructscene.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0,0,0,.5);
+} */
+
+  #advantagetitle {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  .spacer {
+    height: 10px;
+  }
+
+  #advantagelist {
+    position: right;
+    padding-top: 15px;
+    margin-left: 0px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
-  .form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-  .form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #BC2025;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  }
-  .form button:hover,.form button:active,.form button:focus {
-    background: #BC2025;
-  }
-  .form .message {
-    margin: 15px 0 0;
-    color: black;
-    font-size: 12px;
-  }
-  .form .message a {
-    color: #BC2025;
-    text-decoration: none;
-  }
-  .form .register-form {
-    display: none;
-  }
-  
