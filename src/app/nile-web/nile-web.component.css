@@ -11,3 +11,8 @@
     margin-bottom: 0;
     border-width: 1px 0 0;
 }
+
+#footer {
+    background-color: #bc2025;
+    height: auto;
+}
