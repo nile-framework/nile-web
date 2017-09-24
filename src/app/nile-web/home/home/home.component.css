@@ -117,3 +117,6 @@ hr {
 .spacer {
   height: 250px;
 }
+.col-sm-7 {
+  clear: both;
+}
