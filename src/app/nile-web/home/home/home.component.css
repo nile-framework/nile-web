@@ -1,7 +1,7 @@
 .jumbotron {
-  background-color: #bc2025;
+  /* background-color: #bc2025; */
   color: white;
-  background-image: url(/assets/images/Map_overlay.png);
+  background-image: url(/assets/images/construct-pickup-4b.jpg);
   width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,6 +9,7 @@
 }
 .float-form {
   float: right;
+  padding-left: 150px;
 }
 .btn {
   background-color: #0A5A89;
@@ -117,6 +118,6 @@ hr {
 .spacer {
   height: 250px;
 }
-.col-sm-7 {
-  clear: both;
+.trio {
+  padding-left: 20px;
 }
