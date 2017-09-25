@@ -7,3 +7,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#team img {
+    width: 100px;
+}
+
+#team #prof-pic {
+    margin-right: 5px;
+}
