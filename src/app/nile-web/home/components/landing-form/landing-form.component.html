@@ -1,4 +1,7 @@
-<form class="ladingform">
+<form>
+  <h3>
+    Sign Up
+  </h3>
   <div class="form-group">
     <input type="text"  class="form-control" id="firstname" placeholder="Full Name" required>
     <input type="text" class="form-control" id="company" placeholder="Company Name" required>
@@ -7,14 +10,14 @@
   </div>
   <div class="form-group">
     <select class="form-control" id="cities">
-      <option value="invalid" disabled selected>Select your City</option>
+      <option>Select your City</option>
       <option>Dallas</option>
       <option>Fort Worth</option>
     </select>
   </div>
   <div class="form-group">
-    <select class="form-control" id="deliveries" required>
-      <option value="invalid" disabled selected>Deliveries per week?</option>
+    <select class="form-control" id="deliveries">
+      <option selected>Deliveries per week?</option>
       <option value="1-5">1 to 5</option>
       <option value="6-10">6 to 10</option>
       <option value="11-20">11 to 20</option>
@@ -24,3 +27,4 @@
   <button>Sign Up</button>
   <p class="message">Already Registered? <a href="signUp.html">Log In</a></p>
 </form>
+
