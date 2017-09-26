@@ -14,12 +14,20 @@ font-family: 'Oswald', sans-serif; */
 h1 {
     font-family: 'Oswald', sans-serif;
   }
-h2 {
-  font-family: 'Yellowtail', cursive;
-  font-size: 250%;
-}
-h3 {
-  color: black;
-  font-family: 'Libre Baskerville', serif;
-}
+  h2 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 250%;
+  }
+  h3 {
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .btn {
+    color: white;
+    background-color: #0A5A89;
+    border-color: #0A5A89;
+  }
+  #hr-50 {
+    width: 50%;
+  }
   

@@ -38,16 +38,11 @@
   border-color: #0A5A89;
 }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-}
 h2 {
-  font-family: 'Yellowtail', cursive;
   font-size: 250%;
 }
 h3 {
   color: black;
-  font-family: 'Libre Baskerville', serif;
 }
 
 #industries .img-fluid {
