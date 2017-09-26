@@ -8,25 +8,31 @@
   background-size: cover;
 }
 
-#phoneform {
+phoneform {
   float: right;
-  /* border-style: solid;
-  border-width: 25px;
-  border-image: url(/assets/images/iphone-frame-white.png) 25;
-  border-image-outset: 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  border: 10px solid transparent;
+  padding: 25px;
+}
+
+#iphoneframe {
+  background-repeat: none;
 }
 
 #landform {
-  background: white;
-  /* width: 360px; */
-  padding: 10px;
-  /* text-align: center; */
-  /* margin-right: 15px; */
-  border-radius: 10px;
+  background-image: url("/assets/images/iphone-frame-white.png");
+  width: 418px;
+  height: 855px;
+  padding: 40px;
+  border-radius: 70px;
+  text-align: center;
+  padding-top: 175px;
+  margin-left: 15px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+h3 {
+  position: relative;
+  top: 100px;
 }
 
 #3clients {
@@ -38,16 +44,8 @@
   border-color: #0A5A89;
 }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-}
 h2 {
-  font-family: 'Yellowtail', cursive;
   font-size: 250%;
-}
-h3 {
-  color: black;
-  font-family: 'Libre Baskerville', serif;
 }
 
 #industries .img-fluid {
