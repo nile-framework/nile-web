@@ -1,5 +1,5 @@
 <!-- Header -->
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
 	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -34,6 +34,7 @@
 			</li>
 		</ul>
 	</div>
+	
 </nav>
 
 
@@ -47,9 +48,9 @@
 
  
 <footer id="myFooter">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row justify-content-center">
-			<div class="col-sm-6 col-md-3">
+			<div class="col-sm-6 col-md-3 text-center">
 				<h5>Get started</h5>
 				<ul>
 					<li><a routerLink="/" routerLinkActive="active">Home</a></li>
@@ -57,7 +58,7 @@
 					<li><a routerLink="/drive" routerLinkActive="active">Drive</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-sm-6 col-md-3 text-center">
 				<h5>About us</h5>
 				<ul>
 					<li><a routerLink="/services" routerLinkActive="active">Services</a></li>
@@ -65,15 +66,17 @@
 					<li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-sm-6 col-md-3 text-center">
 				<h5>Support</h5>
 				<ul>
 					<li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
 					<li><a href="#">Help desk</a></li>
 					<li><a href="#">FAQ</a></li>
 				</ul>
+			<div class="footer-copyright">
+				<p>© 2017 Copyright Nile Delivery, LLC </p>
 			</div>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-sm-6 col-md-3 text-center">
 				<h5>Legal</h5>
 				<ul>
 					<li><a href="#">Terms of Service</a></li>
@@ -82,50 +85,27 @@
 				</ul>
 			</div>
 		</div>
-		<!-- Here we use the Google Embed API to show Google Maps. -->
-		<!-- In order for this to work in your project you will need to generate a unique API key.  -->
-		<!-- <iframe id="map-container" frameborder="0" style="border:0"
-			src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyBdJm9Amm4KALkKlZObWn40dcpRyH119zg" >
-		</iframe> -->
-	</div>
-	<div class="container">
+
+
 		<div class="row justify-content-center">
-			<div class="col-sm-0 col-md-4"></div>
+			<!-- <div class="col-sm-0 col-md-4"></div> -->
 			<div class="col-sm-6 col-md-4">
 				<div class="social-networks">
 					<a href="https://twitter.com/NileDelivery" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
 					<a href="https://www.facebook.com/niledeliveryapp" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://www.linkedin.com/company/15249098/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
 				</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-				<div class="text-right">
-					<img class="img-fluid" src="/assets/images/logo_transparent_background.png" style="width: 20rem; margin: 1rem;">
-				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+			<!-- <div class="text-right"> -->
+				<img class="img-fluid" src="/assets/images/logo_transparent_background.png" style="width: 20rem; margin: 1rem;">
+			<!-- </div> -->
 			</div>
 		</div>
 	</div>
-				<div class="footer-copyright">
-					<p>© 2017 Copyright Nile Delivery, LLC </p>
-				</div>
-
-
-	<!-- <div class="container">
-		<div class="row justify-content-center text-center">
-			<div class="col-md-4 col-sm-6">
-				<a routerLink="/terms-of-use" routerLinkActive="active">Terms of Use</a>
-			</div>
-
-			<div class="col-sm-12 col-md-4">
-				<img src="/assets/images/dark_logo_transparent_background.png" height="30" alt="The nile logo">
-			</div>
- 
-			<div class="col-md-4 col-sm-6">
-				<a routerLink="/privacy-policy" routerLinkActive="active">Privacy Policy</a>
-			</div>
-		</div>
-	</div> -->
-
+	<div class="footer-copyright">
+		<p>© 2017 Copyright Nile Delivery, LLC </p>
+	</div>
 
 </footer>
 
