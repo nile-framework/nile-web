@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { SharedModule } from '../shared/shared.module';
 
 import { ApplyDriverRoutingModule } from './apply-driver-routing.module';
 import { ApplyDriverComponent } from './apply-driver/apply-driver.component';
 
 @NgModule({
   imports: [
-    CommonModule,
+    SharedModule,
     ApplyDriverRoutingModule
   ],
   declarations: [ApplyDriverComponent]
