@@ -1,0 +1,17 @@
+.jumbotron {
+    color: white;
+    background-color: #bc2025;
+    background-image: url(/assets/images/Map_overlay.png);
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .card #same-day {
+    padding: 5px;
+}
+
+.card #sacheduled {
+    padding: 5px;
+} */

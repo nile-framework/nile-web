@@ -37,10 +37,11 @@ h3 {
 
 #landform {
   background: white;
-  width: 360px;
-  padding: 40px;
-  text-align: center;
-  margin-right: 15px;
+  /* width: 360px; */
+  padding: 10px;
+  /* text-align: center; */
+  /* margin-right: 15px; */
+  border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
