@@ -61,7 +61,7 @@ buildForm(): void {
       // console.log('value is : ' + value);
       // for some reason, true and false are reversed on the checkbox.
       if (value === false) {
-        this.form.controls['driverPhone'].setValue(this.form.value.clientPhone);
+        this.form.controls['driverPhone'].setValue(this.form.value.DriverPhone);
         this.form.controls['driverPhone'].disable();
       } else {
         this.form.controls['driverPhone'].enable();
@@ -73,7 +73,7 @@ buildForm(): void {
       // console.log('value is : ' + value);
       // NOTE: for some reason, true and false are reversed on the checkbox.
       if (value === false) {
-        this.form.controls['driverEmail'].setValue(this.form.value.clientEmail);
+        this.form.controls['driverEmail'].setValue(this.form.value.driverEmail);
         console.log('driver email is: ' + this.form.value.companyEmail);
         this.form.controls['driverEmail'].disable();
       } else {
@@ -82,7 +82,7 @@ buildForm(): void {
       }
     });
 
-    // we also need to subscribe to the value changes of the clientPhone and clientEmail.
+    // we also need to subscribe to the value changes of the driverPhone and driverEmail.
     // if the user has selected to use their personal email or phone number for the company
     // email/phone, then we also need to update the company phone/email value
     this.form.controls['driverPhone'].statusChanges.subscribe( _ => {
@@ -131,8 +131,8 @@ onFormSubmit(): void {
       //   this._afDb.object(`/users/${user.uid}`).set({
       //     firstName: this.form.value.firstName,
       //     lastName: this.form.value.lastName,
-      //     email: this.form.value.clientEmail,
-      //     phone: this.form.value.clientPhone,
+      //     email: this.form.value.driverEmail,
+      //     phone: this.form.value.driverPhone,
       //     company: snapshot.key
       //   })
       // })
@@ -160,8 +160,8 @@ createUser(email: string, password: string): firebase.Promise<any>  {
       this._afDb.object(`/driver/${user.uid}`).set({
         firstName: this.form.value.firstName,
         lastName: this.form.value.lastName,
-        email: this.form.value.clientEmail,
-        phone: this.form.value.clientPhone,
+        email: this.form.value.driverEmail,
+        phone: this.form.value.driverPhone,
         company: snapshot.key
       })
     })
