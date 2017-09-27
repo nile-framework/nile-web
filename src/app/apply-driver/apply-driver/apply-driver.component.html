@@ -58,12 +58,12 @@
               <option>Houston</option>
             </select>
           </div>
-            
+           
           <div class="form-group">
             <label for="zipCode">Zip Code</label>
             <input type="number" formControlName="zipCode" class="form-control" id="zipCode" placeholder="Enter your zip coder">
           </div>
-          </hr>
+          <hr>
 
         <h3>Phone Information</h3>
 
@@ -85,7 +85,7 @@
 
           <div class="form-group">
             <label for="androidversion">What version is your android?</label>
-            <select formControlName="androidversion" class="form-control" id="androidversion" placeholder="">
+            <select formControlName="androidname" class="form-control" id="androidversion" placeholder="">
               <option>4.3 or above</option>
               <option>4.3 or below</option>
             </select>
@@ -137,25 +137,27 @@
           
           <div class="form-group">
             <label for="driverjob">When would you typically drive for Nile?</label>
-          <div class="form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="">
-              Morning
-            </label>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Morning
+              </label>
+            </div>
+
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Mid-Day
+              </label>
+            </div>
+
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+                Afternoon
+              </label>
+            </div>
           </div>
-          <div class="form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="">
-              Mid-Day
-            </label>
-          </div>
-          <div class="form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="">
-              Afternoon
-            </label>
-          </div>
-                
           
           <div class="form-group">
             <label for="driverjob">When can you start?</label>
@@ -165,24 +167,27 @@
                   Today
                 </label>
               </div>
+
               <div class="form-check-inline">
                 <label class="form-check-label">
                   <input class="form-check-input" type="radio" name="thisweek" id="thisweek" value="thisweek">
                   This Week
                 </label>
               </div>
+
             <div class="form-check-inline">
               <label class="form-check-label">
                 <input class="form-check-input" type="radio" name="thismonth" id="thismonth" value="thismonth">
                 This month
               </label>
             </div>
+
           </div>
           
           <div class="form-group">
-              <label for="driverjob">Why do you want to drive for Nile?</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="I want to drive for Nile because..."></textarea>
-            </div>
+            <label for="driverjob">Why do you want to drive for Nile?</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="I want to drive for Nile because..."></textarea>
+          </div>
           
           <div class="form-check">
             <label class="form-check-label">
