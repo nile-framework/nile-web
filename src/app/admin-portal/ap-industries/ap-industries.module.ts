@@ -5,7 +5,7 @@ import { SharedModule } from '../../shared/shared.module';
 
 import { ApIndustriesRoutingModule } from './ap-industries-routing.module';
 import { ApIndustriesComponent } from './ap-industries/ap-industries.component';
-import { IndustriesSideMenuComponent } from './industries-side-menu/industries-side-menu.component';
+
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { IndustriesSideMenuComponent } from './industries-side-menu/industries-s
   ],
   declarations: [
     ApIndustriesComponent,
-    // IndustriesSideMenuComponent
+    
   ]
 })
 export class ApIndustriesModule { }
