@@ -79,8 +79,8 @@ export class ApplyDriverComponent implements OnInit {
         //   this._afDb.object(`/users/${user.uid}`).set({
         //     firstName: this.form.value.firstName,
         //     lastName: this.form.value.lastName,
-        //     email: this.form.value.clientEmail,
-        //     phone: this.form.value.clientPhone,
+        //     email: this.form.value.driverEmail,
+        //     phone: this.form.value.driverPhone,
         //     company: snapshot.key
         //   })
         // })
@@ -108,8 +108,8 @@ export class ApplyDriverComponent implements OnInit {
         this._afDb.object(`/driver/${user.uid}`).set({
           firstName: this.form.value.firstName,
           lastName: this.form.value.lastName,
-          email: this.form.value.clientEmail,
-          phone: this.form.value.clientPhone,
+          email: this.form.value.driverEmail,
+          phone: this.form.value.driverPhone,
           company: snapshot.key
         })
       })

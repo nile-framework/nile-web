@@ -7,3 +7,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.card {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#construction .img-fluid {
+    height: 100px;
+}
+
+#commercial .img-fluid {
+    height: 100px;
+}
