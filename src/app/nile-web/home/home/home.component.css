@@ -1,3 +1,19 @@
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+h2 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 250%;
+}
+h3 {
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+}
+.btn {
+  background-color: #0A5A89;
+  border-color: #0A5A89;
+}
+
 .jumbotron {
   /* background-color: #bc2025; */
   color: white;
@@ -34,18 +50,6 @@
   float: left;
 }
 
-.btn {
-  background-color: #0A5A89;
-  border-color: #0A5A89;
-}
-
-h2 {
-  font-size: 250%;
-}
-h3 {
-  color: black;
-}
-
 #industries .img-fluid {
   height: 125px;
 }
@@ -63,6 +67,10 @@ h3 {
   #videoframe {
     padding: 20px;
   }
+
+/* #feature3 .img-fluid {
+  size: 100%;
+} */
 
 
 #advantages {
