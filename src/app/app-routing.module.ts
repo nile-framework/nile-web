@@ -9,6 +9,7 @@ const appRoutes: Routes = [
 	{ path: 'driver-apply', loadChildren: 'app/apply-driver/apply-driver.module#ApplyDriverModule' },
 	{ path: 'admin-portal', loadChildren: 'app/admin-portal/admin-portal.module#AdminPortalModule' },
 	{ path: 'ica', loadChildren: 'app/nile-web/independent-contractor-agreement/ica.module#icaModule' },
+	{ path: 'eula', loadChildren: 'app/nile-web/eula/eula.module#eulaModule' },
 	// add more root routes here.
 	// { path: '', loadChildren: '' }
 ];
