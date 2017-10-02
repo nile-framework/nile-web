@@ -11,11 +11,12 @@ import { IndustriesSideMenuComponent } from './industries-side-menu/industries-s
   imports: [
     SharedModule,
     // CommonModule,
-    ApIndustriesRoutingModule
+    ApIndustriesRoutingModule,
+
   ],
   declarations: [
     ApIndustriesComponent,
-    // IndustriesSideMenuComponent
+    IndustriesSideMenuComponent
   ]
 })
 export class ApIndustriesModule { }
