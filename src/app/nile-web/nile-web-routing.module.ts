@@ -15,7 +15,9 @@ const routes: Routes = [
     { path: 'about', loadChildren: 'app/nile-web/about/about.module#AboutModule' },
     { path: 'contact', loadChildren: 'app/nile-web/contact/contact.module#ContactModule'},
     { path: 'privacy-policy', loadChildren: 'app/nile-web/privacy-policy/privacy-policy.module#PrivacyPolicyModule'},
-    { path: 'terms-of-service', loadChildren: 'app/nile-web/terms-of-use/terms-of-use.module#TermsOfUseModule' }
+    { path: 'ica', loadChildren: 'app/nile-web/independent-contractor-agreement/ica.module#icaModule' },
+    { path: 'eula', loadChildren: 'app/nile-web/eula/eula.module#eulaModule' },
+    { path: 'terms-of-service', loadChildren: 'app/nile-web/terms-of-service/terms-of-service.module#TermsOfServiceModule' },
     // add more paths below here
     // { path: '', loadChildren: '' }
   ]}
