@@ -11,7 +11,7 @@ const appRoutes: Routes = [
 	{ path: 'admin-portal', loadChildren: 'app/admin-portal/admin-portal.module#AdminPortalModule' },
 	{ path: 'ica', loadChildren: 'app/nile-web/independent-contractor-agreement/ica.module#icaModule' },
 	{ path: 'eula', loadChildren: 'app/nile-web/eula/eula.module#eulaModule' },
-	{ path: 'terms-of-service', loadChildren: 'app/nile-web/terms-of-use/terms-of-use.module#termsOfUseModule' },
+	{ path: 'terms-of-service', loadChildren: 'app/nile-web/terms-of-use/terms-of-use.module#TermsOfUseModule' },
 	// add more root routes here.
 	// { path: '', loadChildren: '' }
 ];

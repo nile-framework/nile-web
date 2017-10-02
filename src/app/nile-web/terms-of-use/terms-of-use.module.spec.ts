@@ -1,13 +1,13 @@
 import { TermsOfUseModule } from './terms-of-use.module';
 
 describe('TermsOfUseModule', () => {
-  let termsOfUseModule: TermsOfUseModule;
+  let TermsOfUseModule: TermsOfUseModule;
 
   beforeEach(() => {
-    termsOfUseModule = new TermsOfUseModule();
+    TermsOfUseModule = new TermsOfUseModule();
   });
 
   it('should create an instance', () => {
-    expect(termsOfUseModule).toBeTruthy();
+    expect(TermsOfUseModule).toBeTruthy();
   });
 });
