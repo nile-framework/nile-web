@@ -18,32 +18,14 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-#phoneform {
-  float: right;
-  /* border-style: solid;
-  border-width: 25px;
-  border-image: url(/assets/images/iphone-frame-white.png) 25;
-  border-image-outset: 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  height: 575px;
 }
 
 #landform {
   background: white;
-  /* width: 360px; */
   padding: 10px;
-  /* text-align: center; */
-  /* margin-right: 15px; */
   border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-#3clients {
-  float: left;
 }
 
 #industries .img-fluid {
@@ -64,30 +46,11 @@ h3 {
     padding: 20px;
   }
 
-/* #feature3 .img-fluid {
-  size: 100%;
-} */
-
-
 #advantages {
   background-image: url(/assets/images/constructscene2.jpg);
   width: 100%;
   height:500px;
 }
-
-/* .advantages { position: relative; }
-
-.advantages::after {
-  background-image: url(/assets/images/constructscene.jpg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 500px;
-  background-color: rgba(0,0,0,.5);
-} */
 
   #advantagetitle {
     margin-top: 15px;
