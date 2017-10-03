@@ -8,7 +8,10 @@ const appRoutes: Routes = [
 	{ path: 'client-apply', loadChildren: 'app/apply-client/apply-client.module#ApplyClientModule' },
 	{ path: 'client-portal', loadChildren: 'app/client-portal/client-portal.module#ClientPortalModule' },
 	{ path: 'driver-apply', loadChildren: 'app/apply-driver/apply-driver.module#ApplyDriverModule' },
+	{ path: 'driver-portal', loadChildren: 'app/driver-portal/driver-portal.module#DriverPortalModule' },
 	{ path: 'admin-portal', loadChildren: 'app/admin-portal/admin-portal.module#AdminPortalModule' },
+	{ path: 'ica', loadChildren: 'app/independent-contractor-agreement/ica.module#icaModule' },
+    { path: 'eula', loadChildren: 'app/eula/eula.module#eulaModule' },
 	// add more root routes here.
 	// { path: '', loadChildren: '' }
 ];
