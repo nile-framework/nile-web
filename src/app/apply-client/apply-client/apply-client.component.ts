@@ -12,7 +12,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 
 import * as fromApp from '../../reducers';
-
 import * as app from '../../core/store/app.actions';
 
 import { AngularFireDatabase } from 'angularfire2/database';

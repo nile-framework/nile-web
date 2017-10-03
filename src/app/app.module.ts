@@ -78,7 +78,8 @@ import { AppComponent } from './app.component';
     NileWebModule
   ],
   providers: [
-    AdminGuard
+    AdminGuard,
+    clientGuard
   ],
   bootstrap: [AppComponent]
 })
