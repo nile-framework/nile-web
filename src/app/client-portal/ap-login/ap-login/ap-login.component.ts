@@ -5,7 +5,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 
 import * as fromApp from '../../../reducers';
-
 import * as app from '../../../core/store/app.actions';
 
 import { AngularFireDatabase } from 'angularfire2/database';
@@ -19,7 +18,7 @@ import * as firebase from 'firebase/app';
 })
 export class ApLoginComponent implements OnInit {
 
-  form: FormGroup;
+  login: FormGroup;
 
   constructor(
     private _fb: FormBuilder,
@@ -37,9 +36,26 @@ export class ApLoginComponent implements OnInit {
   }
 
   buildForm(): void {
-    this.form = this._fb.group({
-      clientEmail: ['', [Validators.required, Validators.email]],
+    this.login = this._fb.group({
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
 
   }}
+
+  onFormSubmit(): void {
+    if (this.login.invalid) {
+      // form invalid, tell user
+      
+    } else {
+      // The form is valid, lets process it, tell the user we processed it,
+      // and then send the user somewhere else.
+      console.log('everything looked valid');
+
+      this.createUser(this.form.value.clientEmail, this.generateRandomString()).then( user => {
+
+      }, error => {
+        console.log(error);
+      })
+    }
+  }

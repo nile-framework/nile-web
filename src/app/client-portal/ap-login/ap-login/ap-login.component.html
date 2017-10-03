@@ -21,13 +21,13 @@
 	<div class="row justify-content-center">
 		<div class="col-sm-12 col-md-6">
 
-			<form [formGroup]="form">
+			<form [FormGroup]="login">
 
 				<h3>Sign In</h3>
 
 				<div class="form-group">
-						<label for="clientEmail">Email</label>
-						<input type="email" formControlName="clientEmail" class="form-control" id="clientEmail" placeholder="Your email">
+						<label for="email">Email</label>
+						<input type="email" formControlName="email" class="form-control" id="email" placeholder="Your email">
 						<small id="emailHelp" class="form-text text-muted">This will be your primary login credential.</small>
 				</div>
 
