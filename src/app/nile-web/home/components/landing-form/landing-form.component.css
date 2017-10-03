@@ -9,6 +9,7 @@ form input {
     box-sizing: border-box;
     font-size: 14px;
   }
+
   form select {
     font-family: "Roboto", sans-serif;
     outline: 0;
@@ -19,6 +20,7 @@ form input {
     box-sizing: border-box;
     font-size: 14px;
   }
+
 form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -33,11 +35,13 @@ form button {
     transition: all 0.3 ease;
     cursor: pointer;
   }
+
 form .message {
     margin: 15px 0 0;
     color: black;
     font-size: 12px;
   }
+  
 form .message a {
     color: #BC2025;
     text-decoration: none;
