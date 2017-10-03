@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 // Routing Gurads
 // import { GuardsModule } from './guards/guards.module';
 import { AdminGuard } from './admin.guard';
+import { clientGuard } from './client.guard';
 
 import { CoreModule } from './core/core.module';
 
