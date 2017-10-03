@@ -13,6 +13,8 @@ const routes: Routes = [
     { path: 'vendors', loadChildren: 'app/client-portal/ap-vendors/ap-vendors.module#ApVendorsModule'},
   ]},
     { path: 'landing', loadChildren: 'app/client-portal/ap-landing/ap-landing.module#ApLandingModule'},
+    { path: 'login', loadChildren: 'app/client-portal/ap-login/ap-login.module#ApLoginModule'},
+    
   // add more routes here
   // { path: '', loadChildren: }
 ];
