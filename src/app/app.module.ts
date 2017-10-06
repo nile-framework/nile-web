@@ -31,6 +31,9 @@ import { NileWebModule } from './nile-web/nile-web.module';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 
+// Firebase SDK Login Auth
+import * as firebase from "firebase";
+
 @NgModule({
   declarations: [
     AppComponent
