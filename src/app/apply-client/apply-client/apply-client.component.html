@@ -6,41 +6,15 @@
 		<img src="/assets/images/logo_transparent_background.png" height="30" alt="The nile logo">
 	</a>
 
-	<div class="d-flex justify-content-end">
-		<button type="button" class="close" aria-label="Close">
+    <div class="container justify-content-end">
+		<div class="d-flex">
+		  <button type="button" class="close" aria-label="Close" routerLink="/sign-up">
 			<span aria-hidden="true">&times;</span>
-			<a routerLink="/" >Cancel Application</a>
-		</button>
-	</div>
-	<!-- <div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav">
+			<!-- <a routerLink="/drive">Cancel Application</a> -->
+		  </button>
+		</div>
+	  </div>
 
-			<li class="nav-item">
-				<a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link" routerLink="/industries" routerLinkActive="active">Industries</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link" routerLink="/about" routerLinkActive="active">About Nile</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link" routerLink="/drive" routerLinkActive="active">Drive</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link" routerLink="/sign-up" routerLinkActive="active">Sign Up</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
-			</li>
-
-		</ul>
-	</div> -->
 </nav>
 
 <br>
@@ -80,6 +54,7 @@
 						<small id="emailHelp" class="form-text text-muted">This will be your primary login credential.</small>
 					</div>
 
+					<hr>
 					<h3>
 						Company Info
 					</h3>
@@ -140,10 +115,14 @@
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							By clicking sumbit I agree to Nile's <a routerLink="/terms-of-use">terms of use</a> and <a routerLink="/privacy-policy">privacy policy</a>.
+							By clicking sumbit I agree to Nile's <a routerLink="/eula">End User License Agreement</a>.
 						</label>
 					</div>
+					<div class="container-fluid">
+							<div class="row justify-content-center">
 					<button (click)="onFormSubmit()" class="btn btn-primary">Submit</button>
+				</div></div>
+				<br>
 				</form>
 
 		</div>
