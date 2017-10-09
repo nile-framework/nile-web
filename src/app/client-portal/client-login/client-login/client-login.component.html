@@ -1,0 +1,22 @@
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6">
+  
+          <form [formGroup]="client">   
+          <h2 class="form-signin-heading">Please login</h2>
+          <div class="form-group">
+          <input type="text" formControlName="email" id="email" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+          <input type="password" formControlName="password" id="password" class="form-control" name="password" placeholder="Password" required=""/>      
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+          </label>
+        </div>
+          <button (click)="login()" class="btn btn-primary" type="submit">Login</button>   
+        </form>
+        
+        
+
+      </div>
+    </div>
+  </div>

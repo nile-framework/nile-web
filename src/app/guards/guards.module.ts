@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AdminPortalGuard } from './admin-portal.guard';
+import { ClientPortalGuard } from './client-portal.guard';
 
 @NgModule({
   imports: [
@@ -9,7 +10,8 @@ import { AdminPortalGuard } from './admin-portal.guard';
   ],
   declarations: [],
   providers: [
-    AdminPortalGuard
+    AdminPortalGuard,
+    ClientPortalGuard
   ]
 })
 export class GuardsModule { }
