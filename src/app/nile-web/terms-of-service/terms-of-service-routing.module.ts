@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 
 const routes: Routes = [
-  { path: '' , component: TermsOfUseComponent}
+  { path: '' , component: TermsOfServiceComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TermsOfUseRoutingModule { }
+export class TermsOfServiceRoutingModule { }
