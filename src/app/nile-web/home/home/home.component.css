@@ -58,7 +58,7 @@ h3 {
   }
 
   .spacer {
-    height: 10px;
+    height: 150px;
   }
 
   #advantagelist {
@@ -69,12 +69,12 @@ h3 {
   }
 
 
-#feature3 .img-fluid {
-  size: 100%;
+/* #feature3 .img-fluid {
+  size: 90%;
 }
   #feature3 .card-deck .card {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
+  } */
 
 #jumbo {
   color: white;
