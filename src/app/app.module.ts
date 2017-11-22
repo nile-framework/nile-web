@@ -19,7 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 // import { GuardsModule } from './guards/guards.module';
 import { AdminGuard } from './admin.guard';
 import { clientGuard } from './client.guard';
-
+  
 import { CoreModule } from './core/core.module';
 
 // ngrx stuff a luff.
@@ -33,10 +33,12 @@ import { AppComponent } from './app.component';
 
 // Firebase SDK Login Auth
 import * as firebase from "firebase";
-
+import { ClientLoginComponent } from './client-portal/client-login/client-login/client-login.component';
+ 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClientLoginComponent
   ],
   imports: [
     BrowserModule,
