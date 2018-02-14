@@ -18,7 +18,12 @@ import * as firebase from 'firebase/app';
 })
 export class ApplyDriverComponent implements OnInit {
 
-  form: FormGroup;
+  isCompleted: boolean;
+
+  formPersonal: FormGroup;
+  formPhone: FormGroup;
+  formVehicle: FormGroup;
+  formAvailability: FormGroup;
 
   constructor(
     private _fb: FormBuilder,
@@ -36,83 +41,100 @@ export class ApplyDriverComponent implements OnInit {
   }
 
   buildForm(): void {
-    this.form = this._fb.group({
+    this.formPersonal = this._fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       driverPhone: ['', Validators.required],
       driverEmail: ['', [Validators.required, Validators.email]],
       city: ['', Validators.required],
       zipCode: ['', Validators.required],
+    });
+
+    this.formPhone = this._fb.group({
       phonetype: ['', Validators.required],
       iphonename: ['', Validators.required],
       androidname: ['', Validators.required],
+    });
+
+    this.formVehicle = this._fb.group({
       vehicleyear: ['', Validators.required],
       make: ['', Validators.required],
       model: ['', Validators.required],
     });
+
+    this.formAvailability = this._fb.group({
+      fullTimeJob: ['', Validators.required],
+      driveTimeMorning: ['', Validators.required],
+      driveTimeMidDay: ['', Validators.required],
+      driveTimeAfternoon: ['', Validators.required],
+      startDate: ['', Validators.required],
+      whyNile: ['', Validators.required],
+      agreeNile: ['', Validators.required]
+    });
   }
 
-  // 
+  onStepPersonalNext() {
+    console.log(this.formPersonal.value);
+    console.log(this.formPersonal.valid);
+  }
+
+  onPhoneNext() {
+    console.log(this.formPhone.value);
+  }
+
+  onStepVehicleNext() {
+    console.log(this.formVehicle.value);
+  }
+
+  onStepAvailabilityNext() {
+    console.log(this.formAvailability.value);
+  }
+
+  valid() {
+    return  this.formPersonal.valid && this.formPhone.valid &&
+            this.formVehicle.valid && this.formAvailability.valid;
+  }
+
   onFormSubmit(): void {
-    if (this.form.invalid) {
+    if (this.formPersonal.invalid) {
       // form invalid, tell user
-      
+      console.log('something looked invalid');
     } else {
       // The form is valid, lets process it, tell the user we processed it,
       // and then send the user somewhere else.
       console.log('everything looked valid');
 
-      this.createUser(this.form.value.driverEmail, this.generateRandomString()).then( user => {
-        // console.log('user uid is: ' + user.uid);
-        // // now create the company in the database
-        // this._afDb.list(`/company`).push({
-        //   creator: user.uid,
-        //   name: this.form.value.companyName,
-        //   email: this.form.value.companyEmail,
-        //   phone: this.form.value.companyPhone,
-        //   state: this.form.value.state,
-        //   city: this.form.value.city,
-        //   deliveriesPerWeek: this.form.value.deliveriesPerWeek
-        // }).then( snapshot => {
-        //   console.log('snapshot.key is : ' + snapshot.key);
-        //   // now add the company to the user.
-        //   this._afDb.object(`/users/${user.uid}`).set({
-        //     firstName: this.form.value.firstName,
-        //     lastName: this.form.value.lastName,
-        //     email: this.form.value.driverEmail,
-        //     phone: this.form.value.driverPhone,
-        //     company: snapshot.key
-        //   })
-        // })
+      this.createUser(this.formPersonal.value.driverEmail, this.generateRandomString()).then( user => {
       }, error => {
         console.log(error);
-      })
+      });
     }
   }
 
 
   createUser(email: string, password: string): firebase.Promise<any>  {
     return this._afAuth.auth.createUserWithEmailAndPassword(email, password).then( user => {
-      console.log('email is : ' + this.form.controls['driverEmail'].value);
+      console.log('email is : ' + this.formPersonal.value.driverEmail);
       // now create the company in the database
       this._afDb.list(`/driver`).push({
         creator: user.uid,
-        name: this.form.value.firstName,
-        email: this.form.controls['driverEmail'].value,
-        phone: this.form.controls['driverPhone'].value,
-        city: this.form.value.city,
-        zipCode: this.form.value.zipcode,
+        email: this.formPersonal.value.driverEmail,
+        phone: this.formPersonal.value.driverPhone,
+        city: this.formPersonal.value.city,
+        zipCode: this.formPersonal.value.zipcode,
       }).then( snapshot => {
         console.log('snapshot.key is : ' + snapshot.key);
         // now add the company to the user.
         this._afDb.object(`/driver/${user.uid}`).set({
-          firstName: this.form.value.firstName,
-          lastName: this.form.value.lastName,
-          email: this.form.value.driverEmail,
-          phone: this.form.value.driverPhone,
+          firstName: this.formPersonal.value.firstName,
+          lastName: this.formPersonal.value.lastName,
+          email: this.formPersonal.value.driverEmail,
+          phone: this.formPersonal.value.driverPhone,
           company: snapshot.key
-        })
-      })
+        });
+
+        this.isCompleted = true;
+      });
     }, error => {
       
     })

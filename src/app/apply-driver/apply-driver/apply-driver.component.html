@@ -22,192 +22,202 @@
   <div class="row justify-content-center">
     <div class="col-sm-12 col-md-6">
 
-      <form [formGroup]="form">
-        <h3>Personal Info</h3>
-
-        <div class="form-group">
-          <label for="firstName">First name</label>
-          <input type="text" formControlName="firstName" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Your first name">
-          <md-error *ngIf="form.controls['firstName'].hasError('required') && form.controls['firstName'].touched">
-            First name is <strong>required</strong>
-          </md-error>
-        </div>
+      <form-wizard>
+        <wizard-step [title]="'Personal Info'" (onNext)="onStepPersonalNext($event)">
+          <form [formGroup]="formPersonal">
+            <h3>Personal Info</h3>
+    
+            <div class="form-group">
+              <label for="firstName">First name</label>
+              <input type="text" formControlName="firstName" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Your first name">
+              <md-error *ngIf="formPersonal.controls['firstName'].hasError('required') && formPersonal.controls['firstName'].touched">
+                First name is <strong>required</strong>
+              </md-error>
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName">Last name</label>
+              <input type="text" formControlName="lastName" class="form-control" id="lastName" placeholder="Your last name">
+            </div>
+    
+            <div class="form-group">
+              <label for="driverPhone">Phone number</label>
+              <input type="tel" formControlName="driverPhone" class="form-control" id="mobilePhoneNumber" placeholder="Your phone number">
+            </div>
+    
+            <div class="form-group">
+              <label for="driverEmail">Email</label>
+              <input type="email" formControlName="driverEmail" class="form-control" id="driverEmail" placeholder="Your email">
+              <small id="emailHelp" class="form-text text-muted">This will be your primary login credential.</small>
+            </div>
+    
+            <div class="form-group">
+              <label for="selectCity">Select closest area</label>
+              <select formControlName="city" class="form-control" id="selectCity" placeholder="">
+                <option>Dallas</option>
+                <option>Fort Worth</option>
+                <option>Austin</option>
+                <option>Houston</option>
+              </select>
+            </div>
+              
+            <div class="form-group">
+              <label for="zipCode">Zip Code</label>
+              <input type="number" formControlName="zipCode" class="form-control" id="zipCode" placeholder="Enter your zip code">
+            </div>
+          </form>
+        </wizard-step>
+        <wizard-step [title]="'Phone Info'" (onNext)="onPhoneNext($event)">
+          <form [formGroup]="formPhone">
+            <h3>Phone Information</h3>
+    
+            <div class="form-group">
+              <label for="phonetype">What type of Phone do you have?</label>
+              <select formControlName="phonetype" class="form-control" id="phonetype" placeholder="">
+                <option>iPhone</option>
+                <option>Android</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="iphoneversion">Is your iPhone version 4s or newer?</label>
+              <select formControlName="iphonename" class="form-control" id="iphonename" placeholder="">
+                <option>No</option>
+                <option>Yes</option>
+              </select>
+            </div>
+    
+            <div class="form-group">
+              <label for="androidversion">What version is your android?</label>
+              <select formControlName="androidname" class="form-control" id="androidversion" placeholder="">
+                <option>4.3 or above</option>
+                <option>4.3 or below</option>
+              </select>
+            </div>
+          </form>
+        </wizard-step>
+        <wizard-step [title]="'Vehicle Info'" (onNext)="onStepVehicleNext($event)">
+          <form [formGroup]="formVehicle">
+            <h3>Vehicle Information</h3>
+              
+            <div class="form-group">
+              <label for="vehicleyear">Year</label>
+              <select formControlName="vehicleyear" class="form-control" id="vehicleyear" placeholder="">
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+              </select>
+            </div>
+    
+            <div class="form-group">
+              <label for="make">Make</label>
+              <input type="text" formControlName="make" class="form-control" id="make" placeholder="Your vehicle make">
+            </div>
+            <div class="form-group">
+              <label for="model">Model</label>
+              <input type="text" formControlName="model" class="form-control" id="model" placeholder="Your last model">
+            </div>
+          </form>
+        </wizard-step>
+        <wizard-step [title]="'Availability Info'" (onNext)="onStepAvailabilityNext($event)">
+            <form [formGroup]="formAvailability">
+                <h3>Availability Information</h3>
         
-        <div class="form-group">
-          <label for="lastName">Last name</label>
-          <input type="text" formControlName="lastName" class="form-control" id="lastName" placeholder="Your last name">
-        </div>
+                <div class="form-group">
+                  <label for="fullTimeJob">Do you have a full time job?</label>
 
-        <div class="form-group">
-          <label for="driverPhone">Phone number</label>
-          <input type="tel" formControlName="driverPhone" class="form-control" id="mobilePhoneNumber" placeholder="Your phone number">
-        </div>
-
-        <div class="form-group">
-          <label for="driverEmail">Email</label>
-          <input type="email" formControlName="driverEmail" class="form-control" id="driverEmail" placeholder="Your email">
-          <small id="emailHelp" class="form-text text-muted">This will be your primary login credential.</small>
-        </div>
-
-        <div class="form-group">
-          <label for="selectCity">Select closest area</label>
-          <select formControlName="city" class="form-control" id="selectCity" placeholder="">
-            <option>Dallas</option>
-            <option>Fort Worth</option>
-            <option>Austin</option>
-            <option>Houston</option>
-          </select>
-        </div>
-          
-        <div class="form-group">
-          <label for="zipCode">Zip Code</label>
-          <input type="number" formControlName="zipCode" class="form-control" id="zipCode" placeholder="Enter your zip code">
-        </div>
-
-        <hr>
-
-        <h3>Phone Information</h3>
-
-        <div class="form-group">
-          <label for="phonetype">What type of Phone do you have?</label>
-          <select formControlName="phonetype" class="form-control" id="phonetype" placeholder="">
-            <option>iPhone</option>
-            <option>Android</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="iphoneversion">Is your iPhone version 4s or newer?</label>
-          <select formControlName="iphonename" class="form-control" id="iphonename" placeholder="">
-            <option>No</option>
-            <option>Yes</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="androidversion">What version is your android?</label>
-          <select formControlName="androidname" class="form-control" id="androidversion" placeholder="">
-            <option>4.3 or above</option>
-            <option>4.3 or below</option>
-          </select>
-        </div>
-
-        <hr>
-
-        <h3>Vehicle Information</h3>
-          
-        <div class="form-group">
-          <label for="vehicleyear">Year</label>
-          <select formControlName="vehicleyear" class="form-control" id="vehicleyear" placeholder="">
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-            <option>2014</option>
-            <option>2013</option>
-            <option>2012</option>
-            <option>2011</option>
-            <option>2010</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="make">Make</label>
-          <input type="text" formControlName="make" class="form-control" id="make" placeholder="Your vehicle make">
-        </div>
-        <div class="form-group">
-          <label for="model">Model</label>
-          <input type="text" formControlName="make" class="form-control" id="make" placeholder="Your last model">
-        </div>
-
-        <hr>
-
-        <h3>Availability</h3>
-
-          <div class="form-group">
-            <label for="driverjob">Do you have a full time job?</label>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="fullTimeJob" id="yes" value="yes" checked>
-                Yes
-              </label>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" formControlName="fullTimeJob" type="radio" name="fullTimeJob" id="yes" value="yes" checked>
+                        Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" formControlName="fullTimeJob" type="radio" name="fullTimeJob" id="no" value="no">
+                        No
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="driveTime">When would you typically drive for Nile?</label>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" formControlName="driveTimeMorning" name="driveTime" type="checkbox" value="">
+                      Morning
+                    </label>
+                  </div>
+      
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" formControlName="driveTimeMidDay" name="driveTime" type="checkbox" value="">
+                      Mid-Day
+                    </label>
+                  </div>
+      
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" formControlName="driveTimeAfternoon" name="driveTime" type="checkbox" value="">
+                      Afternoon
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="startDate">When can you start?</label>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" formControlName="startDate" name="startDate" id="today" value="today" checked>
+                      Today
+                    </label>
+                  </div>
+      
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" formControlName="startDate" name="startDate" id="thisweek" value="thisweek">
+                      This Week
+                    </label>
+                  </div>
+      
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" formControlName="startDate" name="startDate" id="thismonth" value="thismonth">
+                      This month
+                    </label>
+                  </div>
+      
+                </div>
+                
+                <div class="form-group">
+                  <label for="whyNile">Why do you want to drive for Nile?</label>
+                  <textarea class="form-control" name="whyNile" id="whyNile" formControlName="whyNile" rows="5" placeholder="I want to drive for Nile because..."></textarea>
+                </div>
+                
+                <div class="form-check">
+                  <label class="form-check-label" for="agreeNile">
+                    <input type="checkbox" name="agreeNile" id="agreeNile" formControlName="agreeNile" class="form-check-input">
+                    I agree to Nile's <a routerLink="/ica">Independent Contractor Agreement</a>.
+                  </label>
+                </div>
+              </form>
+        </wizard-step>
+        <wizard-step [title]="'Confirmation'" [isValid]="valid()" (onComplete)="onFormSubmit($event)">
+          <div [ngSwitch]="isCompleted">
+            <div *ngSwitchDefault>
+              All info correct!
             </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="fullTimeJob" id="no" value="no">
-                  No
-              </label>
+            <div *ngSwitchCase="true">
+              <h4>Thank you! You have completed all the steps.</h4>
             </div>
           </div>
-
-          
-          <div class="form-group">
-            <label for="driverjob">When would you typically drive for Nile?</label>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
-                Morning
-              </label>
-            </div>
-
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
-                Mid-Day
-              </label>
-            </div>
-
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
-                Afternoon
-              </label>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="driverjob">When can you start?</label>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="startDate" id="today" value="today" checked>
-                Today
-              </label>
-            </div>
-
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="startDate" id="thisweek" value="thisweek">
-                This Week
-              </label>
-            </div>
-
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="startDate" id="thismonth" value="thismonth">
-                This month
-              </label>
-            </div>
-
-          </div>
-          
-          <div class="form-group">
-            <label for="driverjob">Why do you want to drive for Nile?</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="I want to drive for Nile because..."></textarea>
-          </div>
-          
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              I agree to Nile's <a routerLink="/ica">Independent Contractor Agreement</a>.
-            </label>
-          </div>
-          <br>
-          <div class="text-center">
-            <button (click)="onFormSubmit()" class="btn btn-primary">Submit</button>
-          </div>
-
-          <br><br><br>
-
-      </form>
+        </wizard-step>
+      </form-wizard>
 
     </div>
   </div>
