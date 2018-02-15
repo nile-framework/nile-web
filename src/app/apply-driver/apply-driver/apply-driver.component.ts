@@ -64,9 +64,9 @@ export class ApplyDriverComponent implements OnInit {
 
     this.formAvailability = this._fb.group({
       fullTimeJob: ['', Validators.required],
-      driveTimeMorning: ['', Validators.required],
-      driveTimeMidDay: ['', Validators.required],
-      driveTimeAfternoon: ['', Validators.required],
+      driveTimeMorning: [''],
+      driveTimeMidDay: [''],
+      driveTimeAfternoon: [''],
       startDate: ['', Validators.required],
       whyNile: ['', Validators.required],
       agreeNile: ['', Validators.required]
